@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* CRT Retro Custom Cursor setup for Desktop Pointer Devices */
+@media (pointer: fine) {
+  html, body, a, button, [role="button"], [data-interactive] {
+    cursor: none !important;
+  }
+}
+
+@layer utilities {
+  /* Custom Google Fonts Typography */
+  .font-highlight {
+    font-family: 'Instrument Serif', Georgia, serif;
+  }
+
+  .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  /* Highlight text effects */
+  .highlight-text-gold {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    color: #fde047;
+    text-shadow: 0 0 16px rgba(250, 204, 21, 0.75);
+  }
+
+  .highlight-text-cyan {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-style: italic;
+    color: #67e8f9;
+    text-shadow: 0 0 16px rgba(103, 232, 249, 0.75);
+  }
+
+  /* CRT Scanlines background overlay */
+  .vhs-scanlines {
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%, 
+      rgba(0, 0, 0, 0.35) 50%
+    ), linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.03),
+      rgba(0, 255, 0, 0.01),
+      rgba(0, 0, 255, 0.03)
+    );
+    background-size: 100% 4px, 6px 100%;
+  }
+
+  /* VHS Text Glitch effect */
+  .text-glitch {
+    text-shadow: 2px 0 #f59e0b, -2px 0 #d97706;
+  }
+
+  /* Amber Neon Glow */
+  .amber-glow {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+  }
+
+  .amber-glow-lg {
+    box-shadow: 0 0 45px rgba(245, 158, 11, 0.5);
+  }
+
+  /* Retro CRT Flicker Keyframes */
+  @keyframes crtFlicker {
+    0% { opacity: 0.98; }
+    50% { opacity: 1; }
+    52% { opacity: 0.94; }
+    54% { opacity: 1; }
+    80% { opacity: 0.97; }
+    100% { opacity: 1; }
+  }
+
+  .animate-crt {
+    animation: crtFlicker 0.15s infinite alternate;
+  }
+
+  /* REC dot pulse */
+  @keyframes recPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.2; transform: scale(0.9); }
+  }
+
+  .animate-rec {
+    animation: recPulse 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #332712;
+  border-radius: 4px;
+  border: 1px solid #78350f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
