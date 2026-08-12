@@ -10,12 +10,14 @@ import { Testimonials } from './components/Testimonials';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
 import { CrtCursor } from './components/CrtCursor';
+import { Preloader } from './components/Preloader';
 import { AdminLayout } from './admin/AdminLayout';
 
 import { PortfolioItem } from './types';
 import { INITIAL_PORTFOLIO } from './data/mockData';
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const [isSaasAdminOpen, setIsSaasAdminOpen] = useState(false);
 
   const [items, setItems] = useState<PortfolioItem[]>(() => {
@@ -54,6 +56,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950">
       
+      {/* Full-screen Cyberpunk Preloader */}
+      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
+
       {/* Top Navigation */}
       <Header
         onOpenQuote={() => handleOpenQuoteWithCategory('')}
