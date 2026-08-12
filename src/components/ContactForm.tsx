@@ -25,8 +25,13 @@ export const ContactForm: React.FC = () => {
   const whatsappDirectUrl = `https://wa.me/?text=Olá%20Siarom!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20para%20meu%20projeto.`;
 
   return (
-    <section id="contact" className="py-20 bg-neutral-950 relative border-t border-amber-950/40 font-mono">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 bg-neutral-950 relative border-t border-amber-950/40 font-mono overflow-hidden">
+      {/* Background Cyber Mesh & Ambient Light */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f59e0b12_1px,transparent_1px),linear-gradient(to_bottom,#f59e0b12_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-amber-500/10 rounded-full blur-[180px] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-950 via-transparent to-neutral-950 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <ScrollReveal direction="up" distance={30} duration={0.8}>

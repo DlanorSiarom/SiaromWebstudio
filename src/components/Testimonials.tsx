@@ -6,6 +6,12 @@ import { ScrollReveal } from './ScrollReveal';
 export const Testimonials: React.FC = () => {
   return (
     <section className="py-20 bg-neutral-950 relative overflow-hidden border-t border-amber-950/40 font-mono">
+      {/* Background Dot Pattern & Ambient Glows */}
+      <div className="absolute inset-0 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:28px_28px] opacity-15 pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-96 h-96 bg-amber-500/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 bg-amber-600/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-950 via-transparent to-neutral-950 pointer-events-none" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}

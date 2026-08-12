@@ -35,7 +35,13 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ items, onOpenModal
 
   return (
     <section id="portfolio" className="py-20 bg-neutral-950 relative overflow-hidden border-t border-amber-950/40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Background Grid Pattern & Ambient Glows */}
+      <div className="absolute inset-0 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:32px_32px] opacity-15 pointer-events-none" />
+      <div className="absolute -top-40 -left-40 w-96 h-96 bg-amber-600/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-yellow-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-950 via-transparent to-neutral-950 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <ScrollReveal direction="up" distance={30} duration={0.8}>

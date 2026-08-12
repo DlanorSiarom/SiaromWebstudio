@@ -21,6 +21,12 @@ export const Process: React.FC = () => {
 
   return (
     <section id="process" className="py-20 bg-neutral-950 relative overflow-hidden border-t border-amber-950/40 font-mono">
+      {/* Background Cyber Mesh & Light Effects */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f59e0b0d_1px,transparent_1px),linear-gradient(to_bottom,#f59e0b0d_1px,transparent_1px)] bg-[size:36px_36px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-96 h-96 bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-950 via-transparent to-neutral-950 pointer-events-none" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}

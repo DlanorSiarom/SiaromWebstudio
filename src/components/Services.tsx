@@ -25,6 +25,11 @@ export const Services: React.FC<ServicesProps> = ({ onSelectServiceForQuote }) =
 
   return (
     <section id="services" className="py-20 bg-neutral-950 relative overflow-hidden border-t border-amber-950/40">
+      {/* Background Cyber Mesh & Ambient Lights */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#f59e0b10_1px,transparent_1px),linear-gradient(to_bottom,#f59e0b10_1px,transparent_1px)] bg-[size:48px_48px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-neutral-950 via-transparent to-neutral-950 pointer-events-none" />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}

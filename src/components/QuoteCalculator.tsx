@@ -118,6 +118,11 @@ export const QuoteCalculator: React.FC<QuoteCalculatorProps> = ({ initialCategor
 
   return (
     <section id="calculator" className="py-20 bg-neutral-950 relative overflow-hidden border-t border-amber-950/40">
+      {/* High-Tech Grid & Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(#f59e0b_1.2px,transparent_1.2px)] [background-size:28px_28px] opacity-20 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-amber-600/15 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-yellow-500/15 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-950 via-transparent to-neutral-950 pointer-events-none" />
       
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
