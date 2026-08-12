@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight, CheckCircle2, Globe } from 'lucide-react';
+import { ArrowRight, Globe } from 'lucide-react';
 import ParticleText from './ParticleText';
 import gsap from 'gsap';
 
@@ -44,10 +44,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
         <div className="max-w-4xl mx-auto items-center">
           
           {/* Main Hero Content */}
-          <div className="space-y-7 text-center lg:text-left">
+          <div className="space-y-8 text-center lg:text-left">
 
             {/* Main Title with Particle Text */}
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div className="w-full h-32 sm:h-40 relative">
                 <ParticleText
                   text="IDEIAS NUNCA MORREM"
@@ -78,24 +78,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
               Projetamos <span className="font-highlight italic text-amber-300 text-lg sm:text-xl font-normal drop-shadow-[0_0_8px_rgba(253,224,71,0.6)]">Landing Pages</span> de <span className="font-highlight italic text-yellow-300 text-lg sm:text-xl font-normal drop-shadow-[0_0_8px_rgba(253,224,71,0.6)]">extrema conversão</span>, <span className="font-highlight italic text-cyan-300 text-lg sm:text-xl font-normal drop-shadow-[0_0_8px_rgba(103,232,249,0.6)]">E-Commerces velozes</span> e <span className="font-highlight italic text-amber-300 text-lg sm:text-xl font-normal">Plataformas Corporativas</span> com engenharia de código avançada e acabamento retro-futurista marcante.
             </p>
 
-            {/* Key Value Bullets */}
-            <div className="hero-animate grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1 max-w-xl mx-auto lg:mx-0 text-left font-mono text-xs">
-              <div className="flex items-center space-x-2 text-neutral-200 bg-black/80 border border-amber-900/60 px-3 py-2 rounded">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>UI 100% EXCLUSIVA</span>
-              </div>
-              <div className="flex items-center space-x-2 text-neutral-200 bg-black/80 border border-amber-900/60 px-3 py-2 rounded">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>SEO GOOGLE TOP 1</span>
-              </div>
-              <div className="flex items-center space-x-2 text-neutral-200 bg-black/80 border border-amber-900/60 px-3 py-2 rounded">
-                <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>ENTREGA RÁPIDA</span>
-              </div>
-            </div>
-
             {/* Action Buttons */}
-            <div className="hero-animate pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <div className="hero-animate pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <button
                 onClick={onOpenQuote}
                 className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 text-black font-mono font-black text-sm uppercase tracking-wider amber-glow hover:amber-glow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center space-x-3 group"
@@ -111,22 +95,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuote }) => {
                 <Globe className="w-4 h-4 text-amber-400" />
                 <span>Explorar Sites do Portfólio</span>
               </button>
-            </div>
-
-            {/* Trust Footer metrics */}
-            <div className="hero-animate pt-6 border-t border-amber-900/40 flex flex-wrap items-center justify-center lg:justify-start gap-8 text-neutral-300 text-xs font-mono">
-              <div className="bg-black/60 px-3 py-1.5 rounded border border-neutral-800">
-                <span className="block text-xl font-black text-amber-400">100%</span>
-                <span className="text-[10px] text-neutral-400">SATISFAÇÃO GARANTIDA</span>
-              </div>
-              <div className="bg-black/60 px-3 py-1.5 rounded border border-neutral-800">
-                <span className="block text-xl font-black text-white">0.4s</span>
-                <span className="text-[10px] text-neutral-400">TEMPO MÉDIO CARGA</span>
-              </div>
-              <div className="bg-black/60 px-3 py-1.5 rounded border border-neutral-800">
-                <span className="block text-xl font-black text-amber-400">SUPORTE VIP</span>
-                <span className="text-[10px] text-neutral-400">PÓS-LANÇAMENTO</span>
-              </div>
             </div>
 
           </div>
